@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container with Outer Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        /* Outer Gray Box */
+        .outer-box {
+            width: 60%;
+            max-width: 540px;
+            background-color: rgba(128, 128, 128, 0.297);
+            padding: 2mm; /* Distance between the outer box and the main container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            border-radius: 15px; /* Optional rounded corners for outer box */
+        }
+
+        /* Main Container */
+        .container {
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Rounded corners */
+            
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            justify-content: center;
+            
+        }
+
+        .container h2 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+            justify-content: center;
+        }
+
+        .container p {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .small-box {
+            width: 80%;
+            max-width: 300px;
+            height: 100px;
+            background-color: rgb(234, 228, 228);
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .small-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #121111;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Outer Gray Box -->
+    <div class="outer-box">
+        <!-- Main Container -->
+        <div class="container">
+            <center> 
+            <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/food-serve.png?updatedAt=1702142726430" alt="food serve">
+            <h2>Welcome to Our Food Service</h2></center>
+            <p>Our food service is dedicated to delivering the freshest and most delicious meals right to your doorstep. We take pride in using high-quality ingredients and creating dishes that satisfy every palate. Whether you're looking for a quick lunch or a full-course dinner, we've got you covered with a variety of options that are sure to please.</p>
+            
+            <!-- Small box with rounded corners -->
+            <center>
+            <div class="small-box">
+               
+                <p>Special Offer!!! PLACE YOUR FIRST ORDER!</p>
+            </div>
+        </center>
+        </div>
+    </div>
+
+</body>
+</html>
